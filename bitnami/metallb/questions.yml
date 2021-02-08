@@ -6,6 +6,7 @@ categories:
     description: "Enter address range for load balancer consumption"
     type: string
     required: true
+    label: IP Range
 
    
     
