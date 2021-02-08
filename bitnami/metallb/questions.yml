@@ -1,18 +1,12 @@
 categories:
-    - Blog
-    - CMS
+    - LoadBalancer
     questions:
-    - variable: persistence.enabled
-    default: "false"
-    description: "Enable persistent volume for WordPress"
-    type: boolean
-    required: true
-    label: WordPress Persistent Volume Enabled
-    show_subquestion_if: true
-    group: "WordPress Settings"
-    -variable: configInline
-    default: ""
-    description: "Replace IP range for services"
+    - variable: configInline.address-pools.addresses
+    default: "192.168.2.200-192.168.2.210"
+    description: "Enter address range for load balancer consumption"
     type: string
+    required: true
+
+   
     
     
