@@ -28,7 +28,13 @@
 ## Refer to https://metallb.universe.tf/configuration/ for
 ## available options.
 #
-configInline: {}
+configInline:
+    # Example ARP Configuration
+    address-pools:
+    - name: default
+      protocol: layer2
+      addresses:
+      - 10.0.40.100-10.0.40.199
 
 ## String to partially override metallb.fullname include (will maintain the release name)
 ##
